@@ -205,9 +205,9 @@ SUBSYSTEM_DEF(ticker)
 				tipped = TRUE
 
 			if(timeLeft <= 0)
-				if(!checkreqroles())
+				if(!checkreqroles() || totalPlayersReady < 1) 
 					current_state = GAME_STATE_STARTUP
-					start_at = world.time + 600
+					start_at = world.time + 6000
 					timeLeft = null
 					Master.SetRunLevel(RUNLEVEL_LOBBY)
 				else

@@ -21,9 +21,9 @@
 	round_contrib_points = 3
 	cmode_music = 'sound/music/combat_physician.ogg'
 	advclass_cat_rolls = list(CTAG_COURTPHYS = 2)
-	social_rank = SOCIAL_RANK_YEOMAN
+	social_rank = SOCIAL_RANK_NOBLE // "department_flag = NOBLEMEN", and direct servant of the COURT
 
-	job_traits = list(TRAIT_NOSTINK, TRAIT_EMPATH)
+	job_traits = list(TRAIT_NOBLE, TRAIT_NOSTINK, TRAIT_EMPATH)
 	job_subclasses = list(
 		/datum/advclass/physician
 	)
@@ -85,7 +85,7 @@
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 2,
 		/obj/item/natural/worms/leech/cheele = 1, //little buddy
 		/obj/item/reagent_containers/glass/bottle/waterskin = 1,
-		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
+		/obj/item/storage/belt/rogue/pouch/coins/rich = 1,
 		/obj/item/recipe_book/alchemy = 1,
 	)
 

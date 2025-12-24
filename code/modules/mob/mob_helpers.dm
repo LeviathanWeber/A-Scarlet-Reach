@@ -454,6 +454,7 @@
 		hud_used.action_intent.switch_intent(r_index,l_index,oactive)
 
 /mob/proc/update_a_intents()
+	stop_attack()
 	possible_a_intents.Cut()
 	possible_offhand_intents.Cut()
 	var/list/intents = list()
